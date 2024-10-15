@@ -46,7 +46,9 @@ RUN pip3 install torch==2.4.1
 COPY requirements.txt .
 
 RUN pip3 install --upgrade pip && \
-    pip3 install notebook
+    pip3 install notebook && \
+    pip3 install -r requirements.txt
+
 
 
 
