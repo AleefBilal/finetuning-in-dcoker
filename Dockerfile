@@ -43,21 +43,11 @@ WORKDIR /
 
 RUN pip3 install torch==2.4.1
 
-RUN apt-get update && apt-get install -y libsndfile1 ffmpeg
-
-RUN pip3 install Cython==3.0.11
-RUN pip3 install packaging==24.1
-
-RUN pip3 install nemo_toolkit['all']==1.23.0
-
 COPY requirements.txt .
 
 RUN pip3 install --upgrade pip && \
-    pip3 install llama-cpp-python \
-    --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu122 && \
-    pip3 install -r requirements.txt
+    pip3 install notebook
 
-RUN pip3 install notebook
 
 
 ENV HF_DATASETS_CACHE="/runpod-volume/datasets"
