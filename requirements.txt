@@ -1,0 +1,14 @@
+Flask==2.2.5
+Flask_Cors==5.0.0
+Flask_SocketIO==5.3.7
+pydub==0.25.1
+soundfile==0.12.1
+transformers==4.44.2
+numpy==1.26.4
+python-dotenv==1.0.1
+accelerate==0.34.2
+bitsandbytes==0.43.3
+huggingface-hub==0.23.4
+torchaudio==2.4.1
+torchvision==0.19.1
+zarr==2.18.3
